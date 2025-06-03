@@ -51,14 +51,14 @@ const BookingSection = () => {
 
         <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Book Service Card */}
-          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 h-64">
+          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 flex flex-col">
             <CardHeader className="text-center bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 text-white rounded-t-lg py-4">
               <CardTitle className="text-xl font-bold flex items-center justify-center">
                 <Calendar className="mr-2" />
                 Book Service
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-6 text-center flex flex-col justify-between h-full">
+            <CardContent className="p-6 text-center flex flex-col justify-between flex-grow">
               <p className="text-gray-600 mb-4 text-base">
                 Schedule your window cleaning service directly online. Choose your preferred date and time.
               </p>
@@ -77,15 +77,15 @@ const BookingSection = () => {
           </Card>
 
           {/* Get Quote Card */}
-          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 h-64">
+          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 flex flex-col">
             <CardHeader className="text-center bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 text-white rounded-t-lg py-4">
               <CardTitle className="text-xl font-bold flex items-center justify-center">
                 <Phone className="mr-2" />
                 Get a Quote
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-4 h-full">
-              <p className="text-gray-600 mb-4 text-sm text-center">
+            <CardContent className="p-6 flex flex-col justify-between flex-grow">
+              <p className="text-gray-600 mb-4 text-base text-center">
                 Leave your details and we'll call you back with a personalized quote.
               </p>
               <form onSubmit={handleSubmit} className="space-y-3">
@@ -123,12 +123,12 @@ const BookingSection = () => {
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 hover:from-abcleanz-blue-700 hover:to-abcleanz-blue-800 text-white py-2 text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 hover:from-abcleanz-blue-700 hover:to-abcleanz-blue-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Request Quote
                 </Button>
 
-                <p className="text-center text-xs text-gray-600">
+                <p className="text-center text-sm text-gray-500">
                   We'll call you back within 24 hours
                 </p>
               </form>
