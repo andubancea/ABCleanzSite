@@ -5,15 +5,15 @@ import { Card, CardContent } from '@/components/ui/card';
 const TeamSection = () => {
   const teamMembers = [
     {
-      name: "Alex Johnson",
-      role: "Founder & Lead Technician",
-      bio: "With over 10 years of experience in professional window cleaning, Alex founded ABCleanz to bring crystal-clear results to every customer.",
+      name: "Alex Bancea",
+      role: "Founder & Lead Sales Manager",
+      bio: "",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     },
     {
-      name: "Sarah Mitchell",
-      role: "Commercial Services Manager",
-      bio: "Sarah specializes in commercial window cleaning projects and ensures our business clients receive top-tier service and scheduling flexibility.",
+      name: "Dominik Parol",
+      role: "Founder & Lead Cleaner",
+      bio: "",
       image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
     }
   ];
