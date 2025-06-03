@@ -16,7 +16,7 @@ const ReviewsSection = () => {
     {
       name: "Michael Chen",
       rating: 5,
-      text: "We use ABCleanz for our office building monthly. Their commercial service is top-notch and they work around our business hours perfectly."
+      text: "We use ABCleanz for our home monthly. Their residential service is top-notch and they work around our schedule perfectly."
     },
     {
       name: "Emily Rodriguez",
@@ -52,7 +52,7 @@ const ReviewsSection = () => {
   };
 
   return (
-    <section className="py-20 bg-gradient-to-b from-blue-50 to-white">
+    <section id="reviews" className="py-20 bg-gradient-to-b from-blue-50 to-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-abcleanz-blue-800 mb-4">

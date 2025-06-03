@@ -3,10 +3,10 @@ import React from 'react';
 import { ChevronDown } from 'lucide-react';
 
 const HeroSection = () => {
-  const scrollToServices = () => {
-    const servicesSection = document.getElementById('services');
-    if (servicesSection) {
-      servicesSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToReviews = () => {
+    const reviewsSection = document.getElementById('reviews');
+    if (reviewsSection) {
+      reviewsSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -33,16 +33,16 @@ const HeroSection = () => {
           Crystal Clear Windows, Every Time
         </h2>
         <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '0.4s'}}>
-          Professional window cleaning services for homes and businesses. Sparkling results guaranteed.
+          Professional residential window cleaning services. Sparkling results guaranteed.
         </p>
       </div>
 
       {/* Animated Arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <button
-          onClick={scrollToServices}
-          className="text-white hover:text-blue-200 transition-colors duration-300 animate-bounce-gentle"
-          aria-label="Scroll to services"
+          onClick={scrollToReviews}
+          className="text-white hover:text-blue-200 transition-colors duration-300 animate-bounce-slow"
+          aria-label="Scroll to reviews"
         >
           <ChevronDown size={40} />
         </button>

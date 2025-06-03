@@ -106,6 +106,14 @@ export default {
 						transform: 'translateY(-10px)'
 					}
 				},
+				'bounce-slow': {
+					'0%, 100%': {
+						transform: 'translateY(0)'
+					},
+					'50%': {
+						transform: 'translateY(-10px)'
+					}
+				},
 				'fade-in': {
 					'0%': {
 						opacity: '0',
@@ -131,6 +139,7 @@ export default {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'bounce-gentle': 'bounce-gentle 2s ease-in-out infinite',
+				'bounce-slow': 'bounce-slow 4s ease-in-out infinite',
 				'fade-in': 'fade-in 0.6s ease-out',
 				'sparkle': 'sparkle 2s ease-in-out infinite'
 			}

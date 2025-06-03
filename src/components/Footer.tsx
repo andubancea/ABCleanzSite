@@ -15,7 +15,7 @@ const Footer = () => {
               <span className="text-xl font-bold">ABCleanz</span>
             </div>
             <p className="text-blue-100 mb-4">
-              Professional window cleaning services for homes and businesses. Crystal clear results, every time.
+              Professional residential window cleaning services. Crystal clear results, every time.
             </p>
           </div>
 
@@ -34,9 +34,9 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2 text-blue-100">
               <li>Residential Window Cleaning</li>
-              <li>Commercial Window Cleaning</li>
-              <li>Post-Construction Cleanup</li>
+              <li>Interior & Exterior Cleaning</li>
               <li>Screen Cleaning</li>
+              <li>Sill Wiping</li>
             </ul>
           </div>
         </div>
