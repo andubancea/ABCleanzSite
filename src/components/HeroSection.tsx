@@ -36,22 +36,16 @@ const HeroSection = () => {
           Professional residential window cleaning services. Sparkling results guaranteed.
         </p>
       </div>
-
       {/* Animated Arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
         <button
           onClick={scrollToReviews}
-          className="text-white hover:text-blue-200 transition-colors duration-300 animate-bounce-slow"
+          className="text-white hover:text-blue-200 transition-colors duration-1000 animate-bounce-slow"
           aria-label="Scroll to reviews"
         >
           <ChevronDown size={40} />
         </button>
       </div>
-
-      {/* Sparkle Effects */}
-      <div className="absolute top-1/4 left-1/4 w-4 h-4 bg-white rounded-full animate-sparkle opacity-60"></div>
-      <div className="absolute top-1/3 right-1/3 w-3 h-3 bg-blue-200 rounded-full animate-sparkle opacity-40" style={{animationDelay: '1s'}}></div>
-      <div className="absolute bottom-1/3 left-1/5 w-2 h-2 bg-white rounded-full animate-sparkle opacity-50" style={{animationDelay: '2s'}}></div>
     </section>
   );
 };
