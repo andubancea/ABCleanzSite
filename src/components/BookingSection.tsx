@@ -38,7 +38,7 @@ const BookingSection = () => {
   };
 
   return (
-    <section id="booking" className="py-20 bg-gradient-to-b from-white to-abcleanz-blue-50 border-t-4 border-abcleanz-blue-200">
+    <section id="booking" className="py-20 bg-gradient-to-b from-blue-50 via-white to-blue-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-abcleanz-blue-800 mb-4">
@@ -49,98 +49,86 @@ const BookingSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Book Service Card */}
-          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300">
-            <CardHeader className="text-center bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 text-white rounded-t-lg">
-              <CardTitle className="text-2xl font-bold flex items-center justify-center">
+          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 h-64">
+            <CardHeader className="text-center bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 text-white rounded-t-lg py-4">
+              <CardTitle className="text-xl font-bold flex items-center justify-center">
                 <Calendar className="mr-2" />
                 Book Service
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-8 text-center">
-              <p className="text-gray-600 mb-6 text-lg">
+            <CardContent className="p-6 text-center flex flex-col justify-between h-full">
+              <p className="text-gray-600 mb-4 text-base">
                 Schedule your window cleaning service directly online. Choose your preferred date and time.
               </p>
-              <Button
-                onClick={handleCalComBooking}
-                className="w-full bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 hover:from-abcleanz-blue-700 hover:to-abcleanz-blue-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
-              >
-                Schedule Now
-              </Button>
-              <p className="text-sm text-gray-500 mt-4">
-                Instant booking • Online scheduling
-              </p>
+              <div>
+                <Button
+                  onClick={handleCalComBooking}
+                  className="w-full bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 hover:from-abcleanz-blue-700 hover:to-abcleanz-blue-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300 mb-3"
+                >
+                  Schedule Now
+                </Button>
+                <p className="text-sm text-gray-500">
+                  Instant booking • Online scheduling
+                </p>
+              </div>
             </CardContent>
           </Card>
 
           {/* Get Quote Card */}
-          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300">
-            <CardHeader className="text-center bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 text-white rounded-t-lg">
-              <CardTitle className="text-2xl font-bold flex items-center justify-center">
+          <Card className="shadow-xl border-0 hover:shadow-2xl transition-shadow duration-300 h-64">
+            <CardHeader className="text-center bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 text-white rounded-t-lg py-4">
+              <CardTitle className="text-xl font-bold flex items-center justify-center">
                 <Phone className="mr-2" />
                 Get a Quote
               </CardTitle>
             </CardHeader>
-            <CardContent className="p-8">
-              <p className="text-gray-600 mb-6 text-lg text-center">
-                Not sure about pricing? Leave your details and we'll call you back with a personalized quote.
+            <CardContent className="p-4 h-full">
+              <p className="text-gray-600 mb-4 text-sm text-center">
+                Leave your details and we'll call you back with a personalized quote.
               </p>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <Label htmlFor="name" className="text-abcleanz-blue-800 font-semibold">
-                    Full Name *
-                  </Label>
-                  <Input
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    required
-                    className="mt-1 border-abcleanz-blue-200 focus:border-abcleanz-blue-500"
-                    placeholder="Your full name"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="phone" className="text-abcleanz-blue-800 font-semibold">
-                    Phone Number *
-                  </Label>
-                  <Input
-                    id="phone"
-                    name="phone"
-                    type="tel"
-                    value={formData.phone}
-                    onChange={handleChange}
-                    required
-                    className="mt-1 border-abcleanz-blue-200 focus:border-abcleanz-blue-500"
-                    placeholder="(555) 123-4567"
-                  />
-                </div>
-
-                <div>
-                  <Label htmlFor="message" className="text-abcleanz-blue-800 font-semibold">
-                    Tell us about your needs
-                  </Label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={3}
-                    className="mt-1 w-full px-3 py-2 border border-abcleanz-blue-200 rounded-md focus:outline-none focus:ring-2 focus:ring-abcleanz-blue-500 focus:border-transparent"
-                    placeholder="Number of windows, house size, etc."
-                  />
+              <form onSubmit={handleSubmit} className="space-y-3">
+                <div className="grid grid-cols-2 gap-3">
+                  <div>
+                    <Label htmlFor="name" className="text-abcleanz-blue-800 font-semibold text-sm">
+                      Name *
+                    </Label>
+                    <Input
+                      id="name"
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="mt-1 border-abcleanz-blue-200 focus:border-abcleanz-blue-500 h-8 text-sm"
+                      placeholder="Your name"
+                    />
+                  </div>
+                  <div>
+                    <Label htmlFor="phone" className="text-abcleanz-blue-800 font-semibold text-sm">
+                      Phone *
+                    </Label>
+                    <Input
+                      id="phone"
+                      name="phone"
+                      type="tel"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
+                      className="mt-1 border-abcleanz-blue-200 focus:border-abcleanz-blue-500 h-8 text-sm"
+                      placeholder="(555) 123-4567"
+                    />
+                  </div>
                 </div>
 
                 <Button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 hover:from-abcleanz-blue-700 hover:to-abcleanz-blue-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
+                  className="w-full bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 hover:from-abcleanz-blue-700 hover:to-abcleanz-blue-800 text-white py-2 text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                 >
                   Request Quote
                 </Button>
 
-                <p className="text-center text-sm text-gray-600">
+                <p className="text-center text-xs text-gray-600">
                   We'll call you back within 24 hours
                 </p>
               </form>
