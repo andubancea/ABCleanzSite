@@ -22,7 +22,7 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto -mt-16">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
           <span className="bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
             ABCleanz
@@ -31,9 +31,6 @@ const HeroSection = () => {
         <h2 className="text-2xl md:text-4xl font-semibold mb-4 animate-fade-in" style={{animationDelay: '0.2s'}}>
           Crystal Clear Windows, Every Time
         </h2>
-        <p className="text-lg md:text-xl text-green-100 max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '0.4s'}}>
-          Professional residential window cleaning services. Sparkling results guaranteed.
-        </p>
       </div>
       {/* Animated Arrow */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
