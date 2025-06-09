@@ -32,8 +32,7 @@ const BookingSection = () => {
   };
 
   const handleCalComBooking = () => {
-    // Replace with your actual Cal.com link
-    window.open('https://cal.com/your-calendar-link', '_blank');
+    window.open('https://cal.com/abcleanz/general-home-cleaning', '_blank');
   };
 
   return (
