@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -38,7 +37,7 @@ const BookingSection = () => {
   };
 
   return (
-    <section id="booking" className="py-20 bg-gradient-to-b from-blue-50 via-white to-blue-100">
+    <section id="booking" className="py-20 bg-gradient-to-b from-green-50 via-white to-green-100">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-abcleanz-blue-800 mb-4">

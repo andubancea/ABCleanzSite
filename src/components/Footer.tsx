@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer = () => {
@@ -14,7 +13,7 @@ const Footer = () => {
               </div>
               <span className="text-xl font-bold">ABCleanz</span>
             </div>
-            <p className="text-blue-100 mb-4">
+            <p className="text-green-100 mb-4">
               Professional residential window cleaning services. Crystal clear results, every time.
             </p>
           </div>
@@ -22,7 +21,7 @@ const Footer = () => {
           {/* Contact Info */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
-            <div className="space-y-2 text-blue-100">
+            <div className="space-y-2 text-green-100">
               <p>📞 (555) 123-4567</p>
               <p>✉️ info@abcleanz.com</p>
               <p>📍 Serving the Greater Metro Area</p>
@@ -32,7 +31,7 @@ const Footer = () => {
           {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
-            <ul className="space-y-2 text-blue-100">
+            <ul className="space-y-2 text-green-100">
               <li>Residential Window Cleaning</li>
               <li>Interior & Exterior Cleaning</li>
               <li>Screen Cleaning</li>
@@ -41,7 +40,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-blue-700 mt-8 pt-8 text-center text-blue-200">
+        <div className="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
           <p>&copy; 2024 ABCleanz. All rights reserved. | Licensed & Insured</p>
         </div>
       </div>

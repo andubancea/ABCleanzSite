@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Home, Calendar, Building } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -26,7 +25,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 bg-gradient-to-b from-white to-blue-50">
+    <section id="services" className="py-20 bg-gradient-to-b from-white to-green-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-abcleanz-blue-800 mb-4">

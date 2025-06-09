@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ChevronDown } from 'lucide-react';
 
@@ -11,7 +10,7 @@ const HeroSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-blue-900 via-blue-800 to-blue-700">
+    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-green-900 via-green-800 to-green-700">
       {/* Background Image */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -25,14 +24,14 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
         <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
-          <span className="bg-gradient-to-r from-white to-blue-100 bg-clip-text text-transparent">
+          <span className="bg-gradient-to-r from-white to-green-100 bg-clip-text text-transparent">
             ABCleanz
           </span>
         </h1>
         <h2 className="text-2xl md:text-4xl font-semibold mb-4 animate-fade-in" style={{animationDelay: '0.2s'}}>
           Crystal Clear Windows, Every Time
         </h2>
-        <p className="text-lg md:text-xl text-blue-100 max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '0.4s'}}>
+        <p className="text-lg md:text-xl text-green-100 max-w-2xl mx-auto animate-fade-in" style={{animationDelay: '0.4s'}}>
           Professional residential window cleaning services. Sparkling results guaranteed.
         </p>
       </div>
