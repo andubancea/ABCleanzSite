@@ -22,8 +22,8 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <div className="space-y-2 text-green-100">
-              <p>📞 (555) 123-4567</p>
-              <p>✉️ info@abcleanz.com</p>
+              <p>📞 (647) 978-7682</p>
+              <p>✉️ andu@abcleanz.com</p>
               <p>📍 Serving the Greater Toronto Area</p>
             </div>
           </div>
