@@ -24,7 +24,7 @@ const reviewsData = [
     avatar: null,
     time: 'June 9, 2025',
     rating: 5,
-    text: 'Alex and Dominik did a fantastic job on our windows! They did my parents’ house and my mom raves about what a great job they did so I gave them a call. Alex was easy to communicate with through text and gave a fair quote. They were very professional and accommodating. I highly recommend giving them a call.',
+    text: "Alex and Dominik did a fantastic job on our windows! They did my parents' house and my mom raves about what a great job they did so I gave them a call. Alex was easy to communicate with through text and gave a fair quote. They were very professional and accommodating. I highly recommend giving them a call.",
   }
 ];
 
@@ -53,7 +53,7 @@ const ReviewsSection = () => {
               </div>
               <div className="flex items-center gap-2 text-xl font-bold text-gray-900">
                 {renderStars(Math.round(overallRating))}
-                <span className="text-lg font-semibold text-gray-900 ml-2">{overallRating}</span>
+                <span className="text-lg font-semibold text-gray-900 ml-2">{overallRating.toFixed(1)}</span>
                 <span className="text-base font-normal text-gray-500 ml-1">({totalReviews})</span>
               </div>
             </div>
