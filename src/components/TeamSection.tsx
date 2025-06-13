@@ -7,13 +7,13 @@ const TeamSection = () => {
       name: "Alex Bancea",
       role: "Founder & Lead Sales Manager",
       bio: "",
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      image: "https://media.licdn.com/dms/image/v2/D5603AQEXcDOH8lJabw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1703100155114?e=1755129600&v=beta&t=DM1EiDbuuqR7wawiGmyp32Li7m6wPMHXeU-k-tbuciI"
     },
     {
       name: "Dominik Parol",
       role: "Founder & Lead Cleaner",
       bio: "",
-      image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQFBd_1RHrR6DQ/profile-displayphoto-shrink_800_800/B4EZOyBJweH0Ak-/0/1733858467326?e=1755129600&v=beta&t=4Vi8_gyer87J5z2lV-u9pxdha4tGSMGmDmBwn2s3TZY"
     }
   ];
 
