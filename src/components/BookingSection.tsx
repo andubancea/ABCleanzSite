@@ -61,9 +61,8 @@ const BookingSection = () => {
               <p className="text-gray-600 mb-4 text-base text-center">
                 Leave your details and we'll call you back with a personalized quote.
               </p>
-              {/* TODO: USE ANDU EMAIL*/}
               <form 
-                action="https://formsubmit.co/steventohme59@gmail.com" 
+                action="https://formsubmit.co/andu@abcleanz.com" 
                 method="POST"
                 className="space-y-3"
               >
