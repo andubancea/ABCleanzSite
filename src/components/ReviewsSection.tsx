@@ -6,25 +6,25 @@ import { Star } from 'lucide-react';
 
 const reviewsData = [
   {
+    name: 'Justin Inwood',
+    avatar: null,
+    time: 'May 12, 2025',
+    rating: 5,
+    text: 'Amazing job, windows have never looked so clean. Handsome boys who know how to get things done!',
+  },
+  {
     name: 'Lorraine Boucher',
     avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjWdCBD6j-EWVDkBBrbXUz8WghvFbN2GSfoPvujYZcdMwO9Ely5z=w144-h144-p-rp-mo-br100',
-    time: '3 hours ago',
+    time: 'June 6, 2025',
     rating: 5,
-    text: 'ABCleanz window cleaners did an excellent job on our windows, leaving them sparkling and streak-free without the use of chemicals. Their filtered water system is very effective. They also did an excellent job of cleaning the screens and tracks. Thank you Alex and Dominic for a most professional job. I highly recommend these entrepreneurs.',
+    text: 'ABCleanz window cleaners did an excellent job on our windows, leaving them sparkling and streak-free without the use of chemicals. Their filtered water system is very effective. They also did an excellent job of cleaning the screens and tracks. Thank you Alex and Dominik for a most professional job. I highly recommend these entrepreneurs.',
   },
   {
-    name: 'Michael Chen',
+    name: 'Ellisa Moller',
     avatar: null,
-    time: '2 days ago',
+    time: 'June 9, 2025',
     rating: 5,
-    text: 'We use ABCleanz for our home monthly. Their residential service is top-notch and they work around our schedule perfectly.',
-  },
-  {
-    name: 'Emily Rodriguez',
-    avatar: null,
-    time: '1 week ago',
-    rating: 5,
-    text: 'After our home renovation, ABCleanz cleaned all the construction residue from our windows. They looked brand new when they finished!',
+    text: 'Alex and Dominik did a fantastic job on our windows! They did my parents’ house and my mom raves about what a great job they did so I gave them a call. Alex was easy to communicate with through text and gave a fair quote. They were very professional and accommodating. I highly recommend giving them a call.',
   }
 ];
 
