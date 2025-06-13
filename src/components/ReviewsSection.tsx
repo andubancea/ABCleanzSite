@@ -3,16 +3,14 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Star } from 'lucide-react';
 
-// --- EASY TO UPDATE DATA ---
-// Update this reviews array to change the reviews section content
+
 const reviewsData = [
   {
-    name: 'Jennifer Thompson',
-    avatar: null, // Optionally add avatar URL
+    name: 'Lorraine Boucher',
+    avatar: 'https://lh3.googleusercontent.com/a-/ALV-UjWdCBD6j-EWVDkBBrbXUz8WghvFbN2GSfoPvujYZcdMwO9Ely5z=w144-h144-p-rp-mo-br100',
     time: '3 hours ago',
     rating: 5,
-    text: 'ABCleanz did an amazing job on our home windows! They were professional, punctual, and the results were spotless. Highly recommend!',
-    images: [] // Optionally add image URLs
+    text: 'ABCleanz window cleaners did an excellent job on our windows, leaving them sparkling and streak-free without the use of chemicals. Their filtered water system is very effective. They also did an excellent job of cleaning the screens and tracks. Thank you Alex and Dominic for a most professional job. I highly recommend these entrepreneurs.',
   },
   {
     name: 'Michael Chen',
@@ -20,7 +18,6 @@ const reviewsData = [
     time: '2 days ago',
     rating: 5,
     text: 'We use ABCleanz for our home monthly. Their residential service is top-notch and they work around our schedule perfectly.',
-    images: []
   },
   {
     name: 'Emily Rodriguez',
@@ -28,12 +25,11 @@ const reviewsData = [
     time: '1 week ago',
     rating: 5,
     text: 'After our home renovation, ABCleanz cleaned all the construction residue from our windows. They looked brand new when they finished!',
-    images: []
   }
 ];
 
-const overallRating = 4.8;
-const totalReviews = 137;
+const overallRating = 5.0;
+const totalReviews = 7;
 
 const renderStars = (rating: number) => (
   <span className="flex items-center">
@@ -52,7 +48,7 @@ const ReviewsSection = () => {
           <div className="flex flex-col items-start md:flex-row md:items-center md:justify-between gap-4">
             <div className="flex flex-col items-start">
               <div className="flex items-center gap-2 mb-1">
-                <img src="/google.webp" alt="Google logo" width={54} height={54} className="inline-block align-middle" />
+                <img src="/google.webp" alt="Google logo" width={100} height={100} className="inline-block align-middle" />
                 <span className="text-2xl font-semibold text-gray-800">Reviews</span>
               </div>
               <div className="flex items-center gap-2 text-xl font-bold text-gray-900">
@@ -63,7 +59,7 @@ const ReviewsSection = () => {
             </div>
             <Button
               className="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-md shadow-none border-0 text-base font-semibold"
-              onClick={() => window.open('https://www.google.com/search?q=ABCleanz+reviews', '_blank')}
+              onClick={() => window.open('https://www.google.com/search?sca_esv=03718eb1fb0ed70c&si=AMgyJEtREmoPL4P1I5IDCfuA8gybfVI2d5Uj7QMwYCZHKDZ-E1zWhAbnOXPViOX0xFbU-8db9BFyQ0L1mRRT6qEIn4U2j9DnOOtUSj2ehCaaeR4NK4mno8KY-N6i6T7Cv-JO_PvgEk0n&q=ABCleanz+Reviews&sa=X&ved=2ahUKEwio4rL1lu-NAxUqM1kFHT26DCgQ0bkNegQIKhAC&biw=1502&bih=789&dpr=2', '_blank')}
             >
               Write a Review
             </Button>
@@ -97,19 +93,6 @@ const ReviewsSection = () => {
                 <p className="text-gray-700 text-base mb-2">
                   {review.text}
                 </p>
-                {/* Optional: images grid */}
-                {review.images && review.images.length > 0 && (
-                  <div className="grid grid-cols-2 gap-2 mt-2">
-                    {review.images.slice(0, 4).map((img, i) => (
-                      <img key={i} src={img} alt="review" className="rounded-lg object-cover w-full h-20" />
-                    ))}
-                    {review.images.length > 4 && (
-                      <div className="flex items-center justify-center bg-gray-100 rounded-lg text-gray-600 text-sm font-semibold">
-                        +{review.images.length - 4}
-                      </div>
-                    )}
-                  </div>
-                )}
               </CardContent>
             </Card>
           ))}
