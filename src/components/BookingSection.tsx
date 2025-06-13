@@ -1,36 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Calendar, Phone } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
 
 const BookingSection = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    phone: '',
-    message: ''
-  });
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log('Quote request submitted:', formData);
-    toast({
-      title: "Quote Request Submitted!",
-      description: "We'll call you back within 24 hours with your quote.",
-    });
-    setFormData({ name: '', phone: '', message: '' });
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    setFormData(prev => ({
-      ...prev,
-      [e.target.name]: e.target.value
-    }));
-  };
-
   const handleCalComBooking = () => {
     window.open('https://cal.com/abcleanz/general-home-cleaning', '_blank');
   };
@@ -86,7 +61,12 @@ const BookingSection = () => {
               <p className="text-gray-600 mb-4 text-base text-center">
                 Leave your details and we'll call you back with a personalized quote.
               </p>
-              <form onSubmit={handleSubmit} className="space-y-3">
+              {/* TODO: USE ANDU EMAIL*/}
+              <form 
+                action="https://formsubmit.co/steventohme59@gmail.com" 
+                method="POST"
+                className="space-y-3"
+              >
                 <div className="grid grid-cols-2 gap-3">
                   <div>
                     <Label htmlFor="name" className="text-abcleanz-blue-800 font-semibold text-sm">
@@ -95,8 +75,6 @@ const BookingSection = () => {
                     <Input
                       id="name"
                       name="name"
-                      value={formData.name}
-                      onChange={handleChange}
                       required
                       className="mt-1 border-abcleanz-blue-200 focus:border-abcleanz-blue-500 h-8 text-sm"
                       placeholder="Your name"
@@ -110,8 +88,6 @@ const BookingSection = () => {
                       id="phone"
                       name="phone"
                       type="tel"
-                      value={formData.phone}
-                      onChange={handleChange}
                       required
                       className="mt-1 border-abcleanz-blue-200 focus:border-abcleanz-blue-500 h-8 text-sm"
                       placeholder="(555) 123-4567"
