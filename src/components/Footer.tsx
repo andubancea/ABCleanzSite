@@ -24,7 +24,7 @@ const Footer = () => {
             <div className="space-y-2 text-green-100">
               <p>📞 (555) 123-4567</p>
               <p>✉️ info@abcleanz.com</p>
-              <p>📍 Serving the Greater Metro Area</p>
+              <p>📍 Serving the Greater Toronto Area</p>
             </div>
           </div>
 
@@ -35,13 +35,13 @@ const Footer = () => {
               <li>Residential Window Cleaning</li>
               <li>Interior & Exterior Cleaning</li>
               <li>Screen Cleaning</li>
-              <li>Sill Wiping</li>
+              <li>Hard Water Stains Removal</li>
             </ul>
           </div>
         </div>
 
         <div className="border-t border-green-700 mt-8 pt-8 text-center text-green-200">
-          <p>&copy; 2024 ABCleanz. All rights reserved. | Licensed & Insured</p>
+          <p>&copy; 2025 ABCleanz. All rights reserved. | Licensed & Insured</p>
         </div>
       </div>
     </footer>
