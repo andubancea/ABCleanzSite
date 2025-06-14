@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 
@@ -15,8 +14,12 @@ const Header = () => {
       <div className="w-full px-6 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-gradient-to-br from-abcleanz-blue-500 to-abcleanz-blue-700 rounded-lg flex items-center justify-center text-white font-bold text-xl shadow-lg">
-            A
+          <div className="w-10 h-10 bg-white rounded-lg flex items-center justify-center shadow-lg relative overflow-hidden">
+            <img
+              src="/boar.svg"
+              alt="ABCleanz Logo"
+              className="w-8 h-8 object-contain"
+            />
           </div>
           <span className="text-2xl font-bold text-abcleanz-blue-800">ABCleanz</span>
         </div>
