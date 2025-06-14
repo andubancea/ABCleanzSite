@@ -1,13 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Calendar, Phone } from 'lucide-react';
+import { toast } from 'sonner';
 
 const BookingSection = () => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
   const handleCalComBooking = () => {
     window.open('https://cal.com/abcleanz/general-home-cleaning', '_blank');
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+    
+    try {
+      const response = await fetch('https://formsubmit.co/ajax/andu@abcleanz.com', {
+        method: 'POST',
+        body: formData
+      });
+      
+      if (response.ok) {
+        toast.success('Thank you! We\'ll be in touch with you shortly.');
+        form.reset();
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error('Something went wrong. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -62,10 +90,11 @@ const BookingSection = () => {
                 Leave your details and we'll call you back with a personalized quote.
               </p>
               <form 
-                action="https://formsubmit.co/andu@abcleanz.com" 
-                method="POST"
+                onSubmit={handleSubmit}
                 className="space-y-3"
               >
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_template" value="table" />
                 <div className="grid grid-cols-2 gap-3">
                   <div>
                     <Label htmlFor="name" className="text-abcleanz-blue-800 font-semibold text-sm">
@@ -96,9 +125,10 @@ const BookingSection = () => {
 
                 <Button
                   type="submit"
+                  disabled={isSubmitting}
                   className="w-full bg-gradient-to-r from-abcleanz-blue-600 to-abcleanz-blue-700 hover:from-abcleanz-blue-700 hover:to-abcleanz-blue-800 text-white py-3 text-lg font-semibold shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  Request Quote
+                  {isSubmitting ? 'Sending...' : 'Request Quote'}
                 </Button>
 
                 <p className="text-center text-sm text-gray-500">
