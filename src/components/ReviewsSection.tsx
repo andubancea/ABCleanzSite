@@ -29,7 +29,7 @@ const reviewsData = [
 ];
 
 const overallRating = 5.0;
-const totalReviews = 7;
+const totalReviews = 12;
 
 const renderStars = (rating: number) => (
   <span className="flex items-center">
