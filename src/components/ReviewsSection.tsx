@@ -6,11 +6,11 @@ import { Star } from 'lucide-react';
 
 const reviewsData = [
   {
-    name: 'Justin Inwood',
+    name: 'Greg Wolfe',
     avatar: null,
-    time: 'May 12, 2025',
+    time: 'July 13, 2025',
     rating: 5,
-    text: 'Amazing job, windows have never looked so clean. Handsome boys who know how to get things done!',
+    text: 'Alex and Dominik were a pleasure to work with - very professional and hard working with high standards for “clean”. Customer satisfaction was clearly their priority.',
   },
   {
     name: 'Lorraine Boucher',
@@ -29,7 +29,7 @@ const reviewsData = [
 ];
 
 const overallRating = 5.0;
-const totalReviews = 12;
+const totalReviews = 13;
 
 const renderStars = (rating: number) => (
   <span className="flex items-center">
