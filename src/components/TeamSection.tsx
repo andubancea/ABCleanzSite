@@ -7,13 +7,13 @@ const TeamSection = () => {
       name: "Alex Bancea",
       role: "Co-Founder & Lead Sales Manager",
       bio: "",
-      image: "https://media.licdn.com/dms/image/v2/D5603AQEXcDOH8lJabw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1703100155114?e=1755129600&v=beta&t=DM1EiDbuuqR7wawiGmyp32Li7m6wPMHXeU-k-tbuciI"
+      image: "/team/AlexHeadshot.jfif"
     },
     {
       name: "Dominik Parol",
       role: "Co-Founder & Lead Cleaner",
       bio: "",
-      image: "https://media.licdn.com/dms/image/v2/D4E03AQFBd_1RHrR6DQ/profile-displayphoto-shrink_800_800/B4EZOyBJweH0Ak-/0/1733858467326?e=1755129600&v=beta&t=4Vi8_gyer87J5z2lV-u9pxdha4tGSMGmDmBwn2s3TZY"
+      image: "/team/DomHeadshot.jfif"
     }
   ];
 
